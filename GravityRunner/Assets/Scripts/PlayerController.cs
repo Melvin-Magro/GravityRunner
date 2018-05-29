@@ -13,8 +13,8 @@ public class PlayerController : MonoBehaviour {
 
     void Awake()
     {
-        jumpBtn = GameObject.Find("Jump").GetComponent<Button>();
-        jumpBtn.onClick.AddListener(() => Jump());
+        //jumpBtn = GameObject.Find("Jump").GetComponent<Button>();
+        //jumpBtn.onClick.AddListener(() => Jump());
         myBody = GetComponent<Rigidbody2D>();
     }
 
@@ -26,6 +26,11 @@ public class PlayerController : MonoBehaviour {
         Vector3 temp = transform.position;
         temp.x += speed * Time.deltaTime;
         transform.position = temp;
+
+        if (Input.GetButtonDown("Jump"))
+        {
+            Jump();
+        }
     }
 
     public void Jump()
