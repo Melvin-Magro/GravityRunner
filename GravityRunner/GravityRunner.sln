@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GravityRunner", "GravityRunner.csproj", "{C3185742-7750-6A5A-5E81-7DEFA54522C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GravityRunner.Editor", "GravityRunner.Editor.csproj", "{740325CB-FAB3-00AF-BD9C-EFD5B5C0B0DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{C3185742-7750-6A5A-5E81-7DEFA54522C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3185742-7750-6A5A-5E81-7DEFA54522C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3185742-7750-6A5A-5E81-7DEFA54522C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{740325CB-FAB3-00AF-BD9C-EFD5B5C0B0DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{740325CB-FAB3-00AF-BD9C-EFD5B5C0B0DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{740325CB-FAB3-00AF-BD9C-EFD5B5C0B0DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{740325CB-FAB3-00AF-BD9C-EFD5B5C0B0DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -26,5 +26,10 @@ public class Collector : MonoBehaviour {
             temp.x += width * 3;
             target.transform.position = temp;
         }
+
+        if(target.tag == "black" || target.tag =="colour")
+        {
+            target.gameObject.SetActive(false);
+        }
 	}
 }
