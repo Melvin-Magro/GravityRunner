@@ -39,6 +39,7 @@ public class PlayerController : MonoBehaviour {
         Vector3 temp = transform.localScale;
         temp.y *= -1;
         transform.localScale = temp;
+
     }
 }
 

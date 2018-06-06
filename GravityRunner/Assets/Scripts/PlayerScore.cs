@@ -11,6 +11,7 @@ public class PlayerScore : MonoBehaviour {
     private int score = 0;
     public Image overlay;
     Color c = new Color(0f, 1f, 1f, 0f);
+
     public RectTransform barLeft, barRight;
 
     private float speed = 7f;
@@ -41,7 +42,7 @@ public class PlayerScore : MonoBehaviour {
             transform.position = new Vector3(0, 1000, 0);
             target.gameObject.SetActive(false);
             StartCoroutine(RestartGame());
-            c.a -= 0.1f;
+             c.a -= 0.1f;
         }
 
         if(score % 10 == 0)
@@ -49,8 +50,10 @@ public class PlayerScore : MonoBehaviour {
             barLeft.localScale = barRight.localScale = new Vector3(Mathf.Floor((float) score / 10f), 1f, 1f);
             c.a = 0f;
         }
+
         overlay.color = c;
         Debug.Log(Mathf.Floor((float) score / 10f));
+
     }
 
     IEnumerator RestartGame()
@@ -58,5 +61,5 @@ public class PlayerScore : MonoBehaviour {
         yield return new WaitForSecondsRealtime(2f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-    
+
 }
