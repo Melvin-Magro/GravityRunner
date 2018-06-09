@@ -759,6 +759,7 @@ GameObject:
   m_Component:
   - component: {fileID: 455197943}
   - component: {fileID: 455197944}
+  - component: {fileID: 455197945}
   m_Layer: 0
   m_Name: Spawn
   m_TagString: Untagged
@@ -793,6 +794,18 @@ MonoBehaviour:
   items:
   - {fileID: 1505843588361532, guid: b90a38eb0ed2ca04ba2ee9194740a853, type: 2}
   - {fileID: 1640900255217416, guid: a18d1a8cea050c343b7ac2cf72c12a8c, type: 2}
+--- !u!114 &455197945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 455197942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc47dc9afc8fa084c8c7a9d9ced4807a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items: []
 --- !u!1 &469553814
 GameObject:
   m_ObjectHideFlags: 0
@@ -1842,7 +1855,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AspectMode: 0
-  m_AspectRatio: 2.1676192
+  m_AspectRatio: 2.1717556
 --- !u!1 &1107145506
 GameObject:
   m_ObjectHideFlags: 0
@@ -3597,6 +3610,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 455197944}
+        m_MethodName: StartSpawning
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1853096369
@@ -4085,7 +4109,6 @@ GameObject:
   - component: {fileID: 2054365818}
   - component: {fileID: 2054365817}
   - component: {fileID: 2054365820}
-  - component: {fileID: 2054365821}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -4149,18 +4172,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c71718933bc5ca408b2a9e6bbc4a7c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2054365821
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2054365816}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc47dc9afc8fa084c8c7a9d9ced4807a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  items: []
 --- !u!1 &2072952939
 GameObject:
   m_ObjectHideFlags: 0
