@@ -26,6 +26,6 @@ public class Spawn : MonoBehaviour {
         yield return new WaitForSecondsRealtime (time);
         Vector3 temp = new Vector3(transform.position.x, Random.Range(minY, maxY));
         Instantiate(items[Random.Range(0, items.Length)], temp, Quaternion.identity);
-        StartCoroutine(SpawnItems(Random.Range(1f, 2f)));
+        StartCoroutine(SpawnItems(Random.Range(2f, 2f)));
     }
 }
