@@ -10,12 +10,8 @@ public class PlayerScore : MonoBehaviour {
     private Text scoreText;
     private int score = 0;
     public Image overlay;
-<<<<<<< HEAD
     Color c = new Color(0f, 1f, 1f, 0f);
 
-=======
-    Color c = new Color(0f, 0f, 0f, 0f);
->>>>>>> parent of bf9fcb7... Increasing the height and width of the bars of the screen
     public RectTransform barLeft, barRight;
 
     private float speed = 7f;

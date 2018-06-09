@@ -12,7 +12,7 @@ public class Spawn : MonoBehaviour {
 
 
 	
-	void Start ()
+	public void StartSpawning ()
     {
         //used for initialization of the loop to spawn the items
         StartCoroutine(SpawnItems(1f));
