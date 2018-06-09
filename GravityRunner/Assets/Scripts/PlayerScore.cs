@@ -41,7 +41,8 @@ public class PlayerScore : MonoBehaviour {
         {
             transform.position = new Vector3(0, 1000, 0);
             target.gameObject.SetActive(false);
-            StartCoroutine(RestartGame());
+            SceneManager.LoadScene("GameOver");
+            //StartCoroutine(RestartGame());
              c.a -= 0.1f;
         }
 
@@ -56,10 +57,10 @@ public class PlayerScore : MonoBehaviour {
 
     }
 
-    IEnumerator RestartGame()
+    /* IEnumerator RestartGame()
     {
         yield return new WaitForSecondsRealtime(2f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
+    } */
 
 }

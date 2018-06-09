@@ -1,16 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class GameOver : MonoBehaviour {
 
+	[SerializeField]
+    private GameObject[] items;
 	// Use this for initialization
-	void Start () {
-		
+	public void Restart()
+	{
+		SceneManager.LoadScene("MainScene");
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+
+	public void Quit()
+	{
+		Application.Quit();
 	}
 }
