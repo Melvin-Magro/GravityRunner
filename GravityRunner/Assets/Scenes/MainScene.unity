@@ -4085,6 +4085,7 @@ GameObject:
   - component: {fileID: 2054365818}
   - component: {fileID: 2054365817}
   - component: {fileID: 2054365820}
+  - component: {fileID: 2054365821}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -4130,8 +4131,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2054365816}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.000061035156, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4148,6 +4149,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c71718933bc5ca408b2a9e6bbc4a7c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2054365821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2054365816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc47dc9afc8fa084c8c7a9d9ced4807a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items: []
 --- !u!1 &2072952939
 GameObject:
   m_ObjectHideFlags: 0
